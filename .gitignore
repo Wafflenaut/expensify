@@ -4,6 +4,10 @@
 node_modules
 
 # misc
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
 package-lock.json
 .env
 playground

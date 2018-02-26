@@ -1,15 +1,13 @@
-import selectExpensesTotal from '../../selectors/expenses-total.js';
-import expenses from '../fixtures/filters.js';
+import selectExpensesTotal from '../../selectors/expenses-total';
+import expenses from '../fixtures/expenses';
 
 test('should return 0 if no expenses', () => {
-	const emptyExpenses = [];
-	const result = selectExpensesTotal(emptyExpenses);
+	const result = selectExpensesTotal([]);
 	expect(result).toBe(0);
 });
 
 test('should correctly add up a single expense', () => {
-	const singleExpenses = [expenses[0]];
-	const result = selectExpensesTotal(singleExpenses);
+	const result = selectExpensesTotal([expenses[0]]);
 	expect(result).toBe(195);
 });
 

@@ -3,7 +3,7 @@
 exports[`should render ExpenseList with empty message 1`] = `
 <div>
   <p>
-    No epenses
+    No expenses
   </p>
 </div>
 `;

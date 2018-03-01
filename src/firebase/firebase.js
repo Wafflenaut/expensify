@@ -13,6 +13,12 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+export {
+	firebase,
+	database as default
+}
+
+/*
 database.ref().set({
 	name: 'John Moyer',
 	age: 34,
@@ -38,3 +44,4 @@ database.ref('isSingle').remove().then(() => {
 }).catch((e) => {
 	console.log('Unable to delete', e);
 });
+*/
